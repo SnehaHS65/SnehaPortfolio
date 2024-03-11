@@ -63,6 +63,13 @@ body {
     color: #fff;
     font-weight: bold;
 }
+.navbar.sticky-top {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Adjust to properly center the navbar */
+    z-index: 1000;
+}
 
 
 
@@ -71,6 +78,7 @@ body {
     padding: 20px;
     text-align: center;
 }
+
 
 
 #clarivate,#runshaw,#masters,#bachelors{
@@ -90,7 +98,10 @@ body {
 #experience #date, #education #date, #projects #view-link {
     margin-left: 10px; /* Adjust the spacing as needed */
 }
-
+#experience,#education,#projects,#skills {
+    padding-top: 100px; /* Adjust as needed to ensure the header is fully visible */
+    margin-top: -100px; /* Offset the padding to keep the content in the same position */
+}
 
 
 #projects h3 {
