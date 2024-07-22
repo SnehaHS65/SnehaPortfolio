@@ -65,7 +65,7 @@
                     </p>
                 </div>
             
-                <a href="Sneha_Resume - Copy.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
+                <a href="SnehaResumeCopy.pdf" class="btn-rounded-white" target="_blank">Download Resume</a>
                 <hr>
                 
             </div>
@@ -77,11 +77,11 @@
                     <h3>Intradiem Inc<span id="date">May 2024 - Present</span></h3>
                     <h4>Software Development Intern</h4>
                     <ul>
-                        <li>Refactored legacy code and implemented routing logic to optimize microservices communication using Spring Boot, 
-                            achieving a 30% improvement in response time.</li>
-                        <li>Updated Swagger Documentation for integration of new endpoints within the existing APIs. </li>
-                        <li>Resolved 95% of critical bugs, implemented missing functionalities, and wrote detailed debug logs reducing bug 
-                            resolution time. </li>
+                        <li>Automating the read and update of user-to-queue associations using Spring RestTemplate on Genesys and Five9 
+                            ACDs (Automatic Call Distributor) to reduce manual errors, time, and effort in managing contact center queues.</li>
+                        <li>Refactored legacy code to optimize microservices communication using Spring Boot, converting messages to the 
+                            required database format and sending via AvroMessage Sender, as part of Platform Modernization. </li>
+                        <li>Wrote unit tests using Groovy; updated Swagger Documentation to integrate new endpoints within existing APIs.</li>
                     </ul>
                 </div>
                 <div id="clarivate">
@@ -151,12 +151,26 @@
                 <h3>E-Commerce Application<a href="https://github.com/SnehaHS65/SpringBootMicroServices" id="view-link" target="_blank">View Project</a></h3>
                 <div id="bank">
                     <ul>
-                        <li>Developed and containerized three microservices (Product, Order, Inventory) using Docker. 
-                            Implemented synchronous communication between services with REST client to check inventory 
-                            availability before placing orders.</li>
+                        <li>Developed 4 microservices (Product, Order, Inventory, Notification), containerized them with Docker, used REST
+                            client for sync communication(Order-Inventory) and Kafka for async communication(Order-Notification).</li>
                         <li>Configured an API Gateway as the entry point for external clients and secured it with Keycloak for authorization. </li>
-                        <li>Documented REST APIs using Springdoc Open API and Swagger and implemented Circuit Breaker using 
-                            Resilience4j to enhance reliability by managing calls to unavailable services. </li>
+                        <li>Documented REST APIs using Springdoc Open API and Swagger and implemented Circuit Breaker using
+                            Resilience4j to enhance reliability by managing calls to unavailable services. Used Grafana Stack(Loki,
+                            Prometheus, Tempo) for Observability.</li>
+                    </ul>
+                </div>
+                <h3>Image Classification using CNN<a href="https://github.com/SnehaHS65/ImageClassification" id="view-link" target="_blank">View Project</a></h3>
+                <div id="bank">
+                    <ul>
+                        <li>Designed and built a convolutional neural network (CNN) using TensorFlow and Keras to classify images from the CIFAR-10 dataset.</li>
+                        <li>Applied data augmentation techniques and improved model complexity by incorporating dropout, 
+                            batch normalization, and additional convolutional layers, which led to enhanced model performance
+                        </li>
+                        <li>
+                            Conducted evaluation using confusion matrices and classification reports, 
+                            and visualized predictions on test data to assess model accuracy and performance, 
+                            including making real-time predictions on individual images.</li>
+                        </li>
                     </ul>
                 </div>
                 <h3>Expense Manager<a href="Sneha_HolehonnurSridhar_final_projectReport.pdf" id="view-link" target="_blank">View Project</a></h3>
@@ -262,6 +276,7 @@
                         <li>AngularJS</li>
                         <li>Python</li>
                         <li>Machine Learning</li>
+                        <li>Deep Learning</li>
                         <!-- <li>Artificial Intelligence</li> -->
                         <li>Data visualization</li>
                         <li>Data structures and Algorithms</li>
